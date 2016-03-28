@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WeakDB" Class="WeakDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=192.168.0.18;Initial Catalog=WeakDB;User ID=usr_weak" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="WeakDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblUser" Member="tblUsers">
+    <Type Name="tblUser">
+      <Column Name="userID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="firstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOB" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="eMail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="admin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblUser_tblMessage" Member="tblMessages" ThisKey="userID" OtherKey="userID" Type="tblMessage" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblMessage" Member="tblMessages">
+    <Type Name="tblMessage">
+      <Column Name="messageID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="messageBody" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="messageType" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tblUser_tblMessage" Member="tblUser" ThisKey="userID" OtherKey="userID" Type="tblUser" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

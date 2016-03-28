@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHXs47IAi1Uq+jtKFdbiwZgAAAAACAAAAAAAQZgAAAAEAACAAAACF2ELSq1TfotlZXVoURtT9H6CFn+j+GeDLV1wE5EzhRwAAAAAOgAAAAAIAACAAAACWa5jaYDuRMRCtFXxZ44TvnGQqBZG8xMcV/f/Ru07DYSAAAACPvAHVSwiGtxTilw56MopZriYtX+TkNiVYwYLT0E1fUUAAAABs+Eg9h9Q/GSIY7XwYsmMnqXYwJNlXTzoIrqldmt55TYl5fkdk5xHNPBLnOAU0fABrzeS5NBkgKJK4zPusnsY4</EncryptedPassword>
+    <_PublishTargetUrl>ftp://192.168.0.24/inetpub\wwwroot\Weak</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Admin/Admin.aspx">
+      <publishTime>01/04/2016 11:32:18</publishTime>
+    </File>
+    <File Include="Admin/UserManagement.aspx">
+      <publishTime>12/07/2015 12:34:29</publishTime>
+    </File>
+    <File Include="bin/Dissertation %28Weak%29.dll">
+      <publishTime>02/25/2016 13:42:09</publishTime>
+    </File>
+    <File Include="Data.dbml">
+      <publishTime>11/25/2015 15:59:12</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>12/28/2015 11:15:50</publishTime>
+    </File>
+    <File Include="Logout.aspx">
+      <publishTime>12/14/2015 12:16:01</publishTime>
+    </File>
+    <File Include="Members/Home.aspx">
+      <publishTime>12/14/2015 14:12:22</publishTime>
+    </File>
+    <File Include="Members/PostMessage.aspx">
+      <publishTime>12/28/2015 12:53:43</publishTime>
+    </File>
+    <File Include="Registration.aspx">
+      <publishTime>12/14/2015 12:36:41</publishTime>
+    </File>
+    <File Include="StyleSheet.css">
+      <publishTime>12/14/2015 12:35:14</publishTime>
+    </File>
+    <File Include="WeakDB.dbml">
+      <publishTime>12/14/2015 13:38:31</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/25/2016 13:42:10</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
